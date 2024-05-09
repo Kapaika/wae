@@ -1,0 +1,57 @@
+html, body {
+    overflow-x: hidden;
+    font-family: "Mohave", sans-serif;
+}
+
+.logo {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo img{ 
+    height: 70vh;    
+}
+
+.buttons {
+    margin-inline: 20%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+
+.button {
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 40px;
+    position: relative;
+    color: #ffffff;
+    border: none;
+    background-color: #aabace;
+    min-height: 40px;
+}
+
+a:hover {
+    background-color: #91a3c0;
+}
+
+@media only screen and (max-width: 768px) { /* Change breakpoint as needed */
+    .logo img{ 
+        height: 50vh;    
+    }
+
+    .buttons {
+        margin-inline: 0;
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .button {
+        width: 45%;
+        margin-bottom: 5%;
+    }
+}
+
